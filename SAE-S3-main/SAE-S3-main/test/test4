@@ -1,0 +1,307 @@
+<!-- Temperature Chart -->
+<div id="temperature">
+    <canvas id="temperatureChart"></canvas>
+    <?php
+    $labels1 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'];
+    $values1 = [
+        $stationpardate[1]->getTemperature(),
+        $stationpardate[2]->getTemperature(),
+        $stationpardate[3]->getTemperature(),
+        $stationpardate[4]->getTemperature(),
+        $stationpardate[5]->getTemperature(),
+        $stationpardate[6]->getTemperature(),
+        $stationpardate[7]->getTemperature()
+    ];
+    ?>
+    <script>
+        const labels1 = <?php echo json_encode($labels1); ?>;
+        const data1 = <?php echo json_encode($values1); ?>;
+
+        const config1 = {
+            type: 'line',
+            data: {
+                labels: labels1,
+                datasets: [{
+                    label: 'Températures (°C)',
+                    data: data1,
+                    fill: false,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    tension: 0.3,
+                    pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+                    pointBorderColor: '#000',
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: 'white',
+                            font: {
+                                size: 18,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Mois'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Températures (°C)'
+                        },
+                        min: Math.min(...data1) - 1,
+                        max: Math.max(...data1) + 1,
+                        stepSize: 1,
+                        beginAtZero: false
+                    }
+                }
+            }
+        };
+
+        const myChart1 = new Chart(
+            document.getElementById('temperatureChart'),
+            config1
+        );
+    </script>
+<!-- Humidity Chart -->
+<div id="Humidite">
+    <canvas id="humidityChart"></canvas>
+    <?php
+    $labels2 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'];
+    $values2 = [
+        $stationpardate[1]->getHumidite(),
+        $stationpardate[2]->getHumidite(),
+        $stationpardate[3]->getHumidite(),
+        $stationpardate[4]->getHumidite(),
+        $stationpardate[5]->getHumidite(),
+        $stationpardate[6]->getHumidite(),
+        $stationpardate[7]->getHumidite()
+    ];
+    ?>
+    <script>
+        const labels3 = <?php echo json_encode($labels2); ?>;
+        const data3 = <?php echo json_encode($values2); ?>;
+
+        const config3 = {
+            type: 'line',
+            data: {
+                labels: labels3,
+                datasets: [{
+                    label: 'Humidité (%)',
+                    data: data3,
+                    fill: false,
+                    borderColor: 'rgb(173, 88, 19)',
+                    tension: 0.3,
+                    pointBackgroundColor: 'rgb(173, 88, 19)',
+                    pointBorderColor: '#000',
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: 'white',
+                            font: {
+                                size: 18,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Mois'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Humidité (%)'
+                        },
+                        min: Math.min(...data3) - 1,
+                        max: Math.max(...data3) + 1,
+                        stepSize: 1,
+                        beginAtZero: false
+                    }
+                }
+            }
+        };
+
+        const myChart3 = new Chart(
+            document.getElementById('humidityChart'),
+            config3
+        );
+    </script>
+</div>
+
+<!-- Pressure Chart -->
+<div id="Pression">
+    <canvas id="pressionChart"></canvas>
+    <?php
+    $labels3 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'];
+    $values3 = [
+        $stationpardate[1]->getPression(),
+        $stationpardate[2]->getPression(),
+        $stationpardate[3]->getPression(),
+        $stationpardate[4]->getPression(),
+        $stationpardate[5]->getPression(),
+        $stationpardate[6]->getPression(),
+        $stationpardate[7]->getPression()
+    ];
+    ?>
+    <script>
+        const labels4 = <?php echo json_encode($labels3); ?>;
+        const data4 = <?php echo json_encode($values3); ?>;
+
+        const config4 = {
+            type: 'line',
+            data: {
+                labels: labels4,
+                datasets: [{
+                    label: 'Pression (Pascal)',
+                    data: data4,
+                    fill: false,
+                    borderColor: 'rgb(19, 173, 83)',
+                    tension: 0.3,
+                    pointBackgroundColor: 'rgb(19, 173, 83)',
+                    pointBorderColor: '#000',
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: 'white',
+                            font: {
+                                size: 18,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Mois'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Pression (Pascal)'
+                        },
+                        min: Math.min(...data4) - 1,
+                        max: Math.max(...data4) + 1,
+                        stepSize: 1,
+                        beginAtZero: false
+                    }
+                }
+            }
+        };
+
+        const myChart4 = new Chart(
+            document.getElementById('pressionChart'),
+            config4
+        );
+    </script>
+</div>
+
+<!-- VitesseVent Chart -->
+<div id="VitesseVent">
+    <canvas id="VitesseVentChart"></canvas>
+    <?php
+    $labels4 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin'];
+    $values4 = [
+        $stationpardate[1]->getVitesseVent(),
+        $stationpardate[2]->getVitesseVent(),
+        $stationpardate[3]->getVitesseVent(),
+        $stationpardate[4]->getVitesseVent(),
+        $stationpardate[5]->getVitesseVent(),
+        $stationpardate[6]->getVitesseVent(),
+        $stationpardate[7]->getVitesseVent()
+    ];
+    ?>
+    <script>
+        const labels5 = <?php echo json_encode($labels4); ?>;
+        const data5 = <?php echo json_encode($values4); ?>;
+
+        const config5 = {
+            type: 'line',
+            data: {
+                labels: labels5,
+                datasets: [{
+                    label: 'Pression (Pascal)',
+                    data: data4,
+                    fill: false,
+                    borderColor: 'rgb(140, 39, 160)',
+                    tension: 0.3,
+                    pointBackgroundColor: 'rgb(140, 39, 160)',
+                    pointBorderColor: '#000',
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: 'white',
+                            font: {
+                                size: 18,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Mois'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Pression (Pascal)'
+                        },
+                        min: Math.min(...data4) - 1,
+                        max: Math.max(...data4) + 1,
+                        stepSize: 1,
+                        beginAtZero: false
+                    }
+                }
+            }
+        };
+
+        const myChart5 = new Chart(
+            document.getElementById('VitesseVentChart'),
+            config5
+        );
+    </script>
+</div>
+    </div>
+
