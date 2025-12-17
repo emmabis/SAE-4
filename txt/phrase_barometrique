@@ -1,0 +1,9 @@
+0 - Augmentant, puis diminuant : la pression atmosphérique est identique ou supérieure à ce qu'elle était il y a 3 heures.
+1 - Augmentant, puis stable : la pression atmosphérique est maintenant supérieure à ce qu'elle était il y a 3 heures.
+2 - Augmentant (de manière régulière ou irrégulière) : la pression atmosphérique est maintenant supérieure à ce qu'elle était il y a 3 heures.
+3 - Diminuant ou stable, puis augmentant ; ou augmentant, puis augmentant plus rapidement : la pression atmosphérique est maintenant supérieure à ce qu'elle était il y a 3 heures.
+4 - Stable : la pression atmosphérique est identique à ce qu'elle était il y a 3 heures.
+5 - Diminuant, puis augmentant : la pression atmosphérique est identique ou inférieure à ce qu'elle était il y a 3 heures.
+6 - Diminuant, puis stable ; ou diminuant, puis diminuant plus lentement : la pression atmosphérique est maintenant inférieure à ce qu'elle était il y a 3 heures.
+7 - Diminuant (de manière régulière ou irrégulière) : la pression atmosphérique est maintenant inférieure à ce qu'elle était il y a 3 heures.
+8 - Stable ou augmentant, puis diminuant ; ou diminuant, puis diminuant plus rapidement : la pression atmosphérique est maintenant inférieure à ce qu'elle était il y a 3 heures.

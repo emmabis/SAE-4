@@ -1,0 +1,224 @@
+#chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1E88E5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-size: 24px;
+    border: none;
+    transition: all 0.3s;
+}
+
+#chatButton:hover {
+    background-color: #42A5F5;
+    transform: scale(1.05);
+}
+
+#chatContainer {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#chatContainer.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: all;
+}
+
+#chatHeader {
+    background-color: #1565C0;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatHeader h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#roomSection {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#roomChoice {
+    display: flex;
+}
+
+#roomInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-break: break-word;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: messageAppear 0.3s forwards;
+    white-space: pre-wrap;
+}
+
+@keyframes messageAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.received {
+    background-color: #2D5D86;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #3F79AE;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.system {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    background: none;
+    max-width: 100%;
+}
+
+#messageForm {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+#message {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+
+#messageForm button {
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+#messageForm button:hover {
+    transform: scale(1.1);
+}
+
+#status {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    padding: 5px;
+    background-color: #f1f1f1;
+}
+
+#chatButton.new-message::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.typing-indicator {
+    background-color: #2D5D86;
+    border-radius: 18px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.typing-indicator span {
+    height: 8px;
+    width: 8px;
+    background-color: #1E88E5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+    animation: typingBubble 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+    margin-right: 0;
+}
+
+@keyframes typingBubble {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    30% {
+        transform: translateY(-4px);
+        opacity: 1;
+    }
+}

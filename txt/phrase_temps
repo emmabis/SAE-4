@@ -1,0 +1,398 @@
+00 - Développement des nuages non observé ou non observable
+01 - Nuages se dissipant ou devenant moins développés
+02 - État du ciel inchangé dans l'ensemble
+03 - Nuages se formant ou se développant
+04 - Visibilité réduite par de la fumée (incendies, fumée industrielle, cendres volcaniques)
+05 - Brume sèche
+06 - Poussière généralisée en suspension dans l'air, non soulevée par le vent à ou près de la station au moment de
+l'observation
+07 - Poussière ou sable soulevé par le vent à ou près de la station au moment de l'observation, mais pas de tourbillons
+de poussière ou de sable bien développés, et aucune tempête de poussière ou de sable vue ; ou, dans le cas des
+navires, embruns soufflés à la station
+08 - Tourbillons de poussière ou de sable bien développés observés à ou près de la station au cours de l'heure
+précédente ou au moment de l'observation, mais aucune tempête de poussière ou de sable
+09 - Tempête de poussière ou de sable visible au moment de l'observation, ou à la station au cours de l'heure
+précédente
+10 - Brouillard
+11 - Poches de brouillard peu profond ou de brouillard givrant à la station, sur terre ou en mer, ne dépassant pas
+environ 2 mètres sur terre ou 10 mètres en mer
+12 - Brouillard peu profond ou brouillard givrant continu à la station, sur terre ou en mer, ne dépassant pas environ 2
+m/terre ou 10 m/mer
+13 - Éclairs visibles ou tonnerre entendu
+14 - Précipitations visibles, n'atteignant pas le sol ou la surface de la mer
+15 - Précipitations visibles, atteignant le sol ou la surface de la mer, mais éloignées, c.-à-d. > 5 km de la station
+16 - Précipitations visibles, atteignant le sol ou la surface de la mer, proches, mais pas à la station
+17 - Orage, mais pas de précipitations au moment de l'observation
+18 - Rafales à ou visibles depuis la station au cours de l'heure précédente ou au moment de l'observation
+19 - Nuages en entonnoir à ou visibles depuis la station au cours de l'heure précédente ou au moment de l'observation
+20 - Bruine (non verglaçante) ou grains de neige, ne tombant pas en averses, au cours de l'heure précédente mais pas
+au moment de l'observation
+21 - Pluie (non verglaçante), ne tombant pas en averses, au cours de l'heure précédente mais pas au moment de
+l'observation
+22 - Neige, ne tombant pas en averses, au cours de l'heure précédente mais pas au moment de l'observation
+23 - Pluie et neige ou grésil, ne tombant pas en averses ; au cours de l'heure précédente mais pas au moment de
+l'observation
+24 - Bruine verglaçante ou pluie verglaçante ; au cours de l'heure précédente mais pas au moment de l'observation
+25 - Averse(s) de pluie au cours de l'heure précédente mais pas au moment de l'observation
+26 - Averse(s) de neige, ou de pluie et de neige au cours de l'heure précédente mais pas au moment de l'observation
+27 - Averse(s) de grêle, ou de pluie et de grêle au cours de l'heure précédente mais pas au moment de l'observation
+28 - Brouillard ou brouillard givrant au cours de l'heure précédente mais pas au moment de l'observation
+29 - Orage (avec ou sans précipitations) au cours de l'heure précédente mais pas au moment de l'observation
+30 - Tempête de poussière ou de sable légère ou modérée - a diminué au cours de l'heure précédente
+31 - Tempête de poussière ou de sable légère ou modérée - pas de changement appréciable au cours de l'heure
+précédente
+32 - Tempête de poussière ou de sable légère ou modérée - a commencé ou a augmenté au cours de l'heure
+précédente
+33 - Tempête de poussière ou de sable sévère - a diminué au cours de l'heure précédente
+34 - Tempête de poussière ou de sable sévère - pas de changement appréciable au cours de l'heure précédente
+35 - Tempête de poussière ou de sable sévère - a commencé ou a augmenté au cours de l'heure précédente
+36 - Neige dérivante légère/modérée - généralement basse (sous le niveau des yeux)
+37 - Neige dérivante forte - généralement basse (sous le niveau des yeux)
+38 - Neige soufflée légère/modérée - généralement haute (au-dessus du niveau des yeux)
+39 - Neige soufflée forte - généralement haute (au-dessus du niveau des yeux)
+40 - Brouillard ou brouillard givrant à une certaine distance au moment de l'observation, mais pas à la station au cours
+de l'heure précédente, le brouillard ou le brouillard givrant s'étendant à un niveau au-dessus de celui de l'observateur
+41 - Brouillard ou brouillard givrant en nappes
+42 - Brouillard/brouillard givrant, ciel visible, est devenu plus mince au cours de l'heure précédente
+43 - Brouillard/brouillard givrant, ciel invisible, est devenu plus mince au cours de l'heure précédente
+44 - Brouillard ou brouillard givrant, ciel visible, pas de changement appréciable au cours de la dernière heure
+45 - Brouillard ou brouillard givrant, ciel invisible, pas de changement appréciable au cours de l'heure précédente
+46 - Brouillard ou brouillard givrant, ciel visible, a commencé ou est devenu plus épais au cours de l'heure précédente
+47 - Brouillard ou brouillard givrant, ciel invisible, a commencé ou est devenu plus épais au cours de l'heure précédente
+48 - Brouillard, déposant du givre, ciel visible
+49 - Brouillard, déposant du givre, ciel invisible
+50 - Bruine, non verglaçante, intermittente, légère au moment de l'observation
+51 - Bruine, non verglaçante, continue, légère au moment de l'observation
+52 - Bruine, non verglaçante, intermittente, modérée au moment de l'observation
+53 - Bruine, non verglaçante, continue, modérée au moment de l'observation
+54 - Bruine, non verglaçante, intermittente, forte au moment de l'observation
+55 - Bruine, non verglaçante, continue, forte au moment de l'observation
+56 - Bruine verglaçante, légère
+57 - Bruine verglaçante, modérée ou forte (dense)
+58 - Pluie et bruine, légère
+59 - Pluie et bruine, modérée ou forte
+60 - Pluie, non verglaçante, intermittente, légère au moment de l'observation
+61 - Pluie, non verglaçante, continue, légère au moment de l'observation
+62 - Pluie, non verglaçante, intermittente, modérée au moment de l'observation
+63 - Pluie, non verglaçante, continue, modérée au moment de l'observation
+64 - Pluie, non verglaçante, intermittente, forte au moment de l'observation
+65 - Pluie, non verglaçante, continue, forte au moment de l'observation
+66 - Pluie verglaçante, légère
+67 - Pluie verglaçante, modérée ou forte
+68 - Pluie ou bruine et neige, légère
+69 - Pluie ou bruine et neige, modérée ou forte
+70 - Chute intermittente de flocons de neige, légère au moment de l'observation
+71 - Chute continue de flocons de neige, légère au moment de l'observation
+72 - Chute intermittente de flocons de neige, modérée au moment de l'observation
+73 - Chute continue de flocons de neige, modérée au moment de l'observation
+74 - Chute intermittente de flocons de neige, forte au moment de l'observation
+75 - Chute continue de flocons de neige, forte au moment de l'observation
+76 - Poussière de diamant (avec ou sans brouillard)
+77 - Grains de neige (avec ou sans brouillard)
+78 - Cristaux de neige en forme d'étoile isolés (avec ou sans brouillard)
+79 - Granules de glace
+80 - Averse(s) de pluie, légère(s)
+81 - Averse(s) de pluie, modérée(s) ou forte(s)
+82 - Averse(s) de pluie, violente(s)
+83 - Averse(s) de pluie et de neige, légère(s)
+84 - Averse(s) de pluie et de neige, modérée(s) ou forte(s)
+85 - Averse(s) de neige, légère(s)
+86 - Averse(s) de neige, modérée(s) ou forte(s)
+87 - Averse(s) de grésil ou petite grêle, avec ou sans pluie ou pluie et neige mélangées - légère(s)
+88 - Averse(s) de grésil ou petite grêle, avec ou sans pluie ou pluie et neige mélangées - modérée(s) ou forte(s)
+89 - Averse(s) de grêle, avec ou sans pluie ou pluie et neige mélangées, non associée(s) à un orage - légère(s)
+90 - Averse(s) de grêle, avec ou sans pluie ou pluie et neige mélangées, non associée(s) à un orage - modérée(s) ou
+forte(s)
+91 - Pluie légère au moment de l'observation - Orage au cours de l'heure précédente mais pas au moment de
+l'observation
+92 - Pluie modérée ou forte au moment de l'observation - Orage au cours de l'heure précédente mais pas au moment
+de l'observation
+93 - Neige légère, ou pluie et neige mélangées ou grêle au moment de l'observation - Orage au cours de l'heure
+précédente mais pas au moment de l'observation
+94 - Neige modérée ou forte, ou pluie et neige mélangées ou grêle au moment de l'observation - Orage au cours de
+l'heure précédente mais pas au moment de l'observation
+95 - Orage, léger ou modéré, sans grêle, mais avec pluie et/ou neige au moment de l'observation
+96 - Orage, léger ou modéré, avec grêle au moment de l'observation
+97 - Orage, fort, sans grêle, mais avec pluie et/ou neige au moment de l'observation
+98 - Orage combiné avec tempête de poussière/sable au moment de l'observation
+99 - Orage, fort avec grêle au moment de l'observation
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Météothèque</title>
+    <script>
+        function RegOuDept() {
+            const regionSelect = document.getElementById('region');
+            const departementSelect = document.getElementById('departement');
+            const hiddenField = document.getElementById('type_localisation');
+
+            if (regionSelect.value) {
+                departementSelect.disabled = true;
+                hiddenField.value = 'region';
+            } else {
+                departementSelect.disabled = false;
+            }
+
+            if (departementSelect.value) {
+                regionSelect.disabled = true;
+                hiddenField.value = 'departement';
+            } else {
+                regionSelect.disabled = false;
+            }
+
+            if (!regionSelect.value && !departementSelect.value) {
+                hiddenField.value = '';
+            }
+        }
+    </script>
+</head>
+<body class="creationmetheoteque-body">
+    <h1 class="formulairemétéothéque">Formulaire Météothèque</h1>
+    <form class="creationforum" action="../web/frontController.php?action=CreationMeteotheque&controller=meteotheque" method="post">
+        <label class="titrecreation" for="titre">Titre :</label>
+        <input class="remplire" type="text" id="titre" name="titre" maxlength="64" required>
+        <br><br>
+
+        <label class="titrecreation" for="region">Région :</label>
+        <select class="localisation" id="region" name="localisation" onchange="RegOuDept()">
+            <option class="optioncreation" value="">-- Sélectionnez une région --</option>
+            <?php
+                $regionsAffichees = [];
+                    foreach ($stations as $station) {
+                        $region = $station->getNom_reg();
+                        if (!in_array($region, $regionsAffichees) && $region != "il y a rien") {
+                            echo "<option class='regionvaleurs' value='$region'>$region</option>";
+                            $regionsAffichees[] = $region;
+                        }
+                    }
+            ?>
+        </select>
+        <br><br>
+
+        <label class="titrecreation" for="departement">Département :</label>
+        <select class="localisation" id="departement" name="localisation" onchange="RegOuDept()">
+            <option class="optioncreation" value="">-- Sélectionnez un département --</option>
+            <?php
+                $departementsAffichees = [];
+                    foreach ($stations as $station) {
+                        $departement = $station->getNom_dept();
+                        if (!in_array($departement, $departementsAffichees) && $rdepartementegion != "il y a rien") {
+                            echo "<option class='regionvaleurs' value='$departement'>$departement</option>";
+                            $departementsAffichees[] = $departement;
+                        }
+                    }
+            ?>
+        </select>
+        <br><br>
+
+        <input type="hidden" id="type_localisation" name="type_localisation" value="">
+        
+        <label class="titrecreation" for="date_debut">Date de début :</label>
+        <input class="datechoix" type="date" id="date_debut" name="date_debut" pattern="\d{4}-\d{2}-\d{2}" required>
+        <br><br>
+
+        <label class="titrecreation" for="date_fin">Date de fin :</label>
+        <input class="datechoix" type="date" id="date_fin" name="date_fin" pattern="\d{4}-\d{2}-\d{2}" required>
+        <br><br>
+
+        <label class="titrecreation" for="prive">Privé :</label>
+        <input class="lachex" type="checkbox" id="prive" name="prive" value="1">
+        <br><br>
+
+        <button class="ledeuxiemeboutton" type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Météothèque</title>
+    <script>
+        function RegOuDept() {
+            const regionSelect = document.getElementById('region');
+            const departementSelect = document.getElementById('departement');
+            const hiddenField = document.getElementById('type_localisation');
+
+            if (regionSelect.value) {
+                departementSelect.disabled = true;
+                hiddenField.value = 'region';
+            } else {
+                departementSelect.disabled = false;
+            }
+
+            if (departementSelect.value) {
+                regionSelect.disabled = true;
+                hiddenField.value = 'departement';
+            } else {
+                regionSelect.disabled = false;
+            }
+
+            if (!regionSelect.value && !departementSelect.value) {
+                hiddenField.value = '';
+            }
+        }
+    </script>
+</head>
+<body class="updatemetheoteque-body">
+    <h1 class="meteo-form-title">Formulaire Météothèque</h1>
+    <form class="meteo-form" action="../web/frontController.php?action=updated&controller=meteotheque" method="post">
+        <label for="titre" class="meteo-label">Titre :</label>
+        <input class="meteo-input" type="text" id="titre" name="titre" maxlength="64"<?php echo 'value='.$meteotheque->getTitre() ?> required>
+        <br><br>
+
+        <label for="region" class="meteo-label">Région :</label>
+        <select class="meteo-select" id="region" name="localisation" onchange="RegOuDept()">
+            <option class="selection" value="">-- Sélectionnez une région --</option>
+            <?php
+                $regionsAffichees = [];
+                if ($meteotheque->getTypeLocalisation() == "region"){
+                    $localisationActuelle = $meteotheque->getlocalisation();
+                } else {
+                    $localisationActuelle = null;
+                }
+                foreach ($stations as $station) {
+                    $region = htmlspecialchars($station->getNom_reg());
+                    if (!in_array($region, $regionsAffichees) && $region != "il y a rien") {
+                        if($localisationActuelle){
+                            $selected = ($region === $localisationActuelle) ? "selected" : "";
+                            echo "<option value='$region' $selected>$region</option>";
+                        } else {
+                            echo "<option value='$region'>$region</option>";
+                        }
+                        $regionsAffichees[] = $region;
+                    }
+                }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="departement" class="meteo-label">Département :</label>
+        <select class="meteo-select" id="departement" name="localisation" onchange="RegOuDept()">
+            <option class="selection" value="">-- Sélectionnez un département --</option>
+            <?php
+                $departementsAffichees = [];
+                if ($meteotheque->getTypeLocalisation() == "departement"){
+                    $localisationActuelle = $meteotheque->getlocalisation();
+                } else {
+                    $localisationActuelle = null;
+                }
+                foreach ($stations as $station) {
+                    $departement = htmlspecialchars($station->getNom_dept());
+                    if (!in_array($departement, $departementsAffichees) && $rdepartementegion != "il y a rien") {
+                        if($localisationActuelle){
+                            $selected = ($departement === $localisationActuelle) ? "selected" : "";
+                            echo "<option value='$departement' $selected>$departement</option>";
+                        } else {
+                            echo "<option value='$departement'>$departement</option>";
+                        }
+                        $departementsAffichees[] = $departement;
+                    }
+                }
+            ?>
+        </select>
+        <br><br>
+
+        <input type="hidden" id="type_localisation" name="type_localisation" value="">
+        <?php
+            echo '<input type="hidden" id="id_meteotheque" name="id_meteotheque" value="'.htmlspecialchars($meteotheque->getId_meteotheque()).'">';
+        ?>
+        <label for="date_debut" class="meteo-label">Date de début :</label>
+        <input class="meteo-input meteo-date" type="date" id="date_debut" name="date_debut" pattern="\d{4}-\d{2}-\d{2}" <?php echo "value =". $meteotheque->getDateDebut()?> required>
+        <br><br>
+
+        <label for="date_fin" class="meteo-label">Date de fin :</label>
+        <input class="meteo-input meteo-date" type="date" id="date_fin" name="date_fin" pattern="\d{4}-\d{2}-\d{2}" <?php echo "value =". $meteotheque->getDateFin()?> required>
+        <br><br>
+
+        <label for="prive" class="meteo-label">Privé :</label>
+        <input type="checkbox" id="prive" name="prive" value="1">
+        <br><br>
+
+        <button class="meteo-button" type="submit">Envoyer</button>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            RegOuDept();
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+<div class="graphes">
+    <canvas id="getPression"></canvas>
+    <?php
+    $labels4 = [];
+    $values4 = [];
+    for ($i = 1; $i <= 7; $i++) {
+        $timestamp = strtotime($stationpardate[$i][1]);
+        $labels4[] = date("l", $timestamp);
+        if(isset($stationpardate[$i][0])){
+        $values4[] = $stationpardate[$i][0]->getPression();
+    }else{
+        $values4[] = 0;
+    }
+    }   
+    ?>
+    <script>
+        const labels4 = <?php echo json_encode($labels4); ?>;
+        const data4 = <?php echo json_encode($values4); ?>;
+
+        const config4 = {
+            type: 'line',
+            data: {
+                labels: labels4,
+                datasets: [{
+                    label: 'Pression (Pascal)',
+                    data: data4,
+                    fill: false,
+                    borderColor: 'rgb(19, 137, 173)',
+                    tension: 0.3,
+                    pointBackgroundColor: 'rgb(19, 137, 173)',
+                    pointBorderColor: '#000',
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            color: 'white',
+                            font: {
+                                size: 18,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Jours' } },
+                    y: {
+                        title: { display: true, text: 'Pression (Pascal)' },
+                        min: Math.min(...data4) - 1,
+                        max: Math.max(...data4) + 1,
+                        beginAtZero: false
+                    }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('getPression'), config4);
+    </script>
+</div>

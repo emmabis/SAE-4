@@ -1,0 +1,195 @@
+/* Styles pour la page support/chat */
+#supportChatContainer {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 70vh;
+}
+
+#supportChatHeader {
+    background-color: #2D5D86;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#supportChatHeader h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#supportStatus {
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#supportStatus.connected {
+    background-color: #4CAF50;
+}
+
+#supportRoomSection {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+/* Par défaut, le formulaire de choix de salle est caché */
+#supportRoomChoice {
+    display: none;
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s ease;
+}
+
+/* Le formulaire n'est visible que pour les administrateurs (avec la classe active) */
+#supportRoomChoice.active {
+    display: flex;
+    opacity: 1;
+    height: auto;
+    gap: 10px;
+    padding: 12px 15px;
+    background-color: #f9f9f9;
+}
+
+/* Style des éléments du formulaire quand il est visible */
+#supportRoomChoice.active .support-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#supportRoomChoice.active .support-button {
+    background-color: #3F79AE;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#supportRoomChoice.active .support-button:hover {
+    background-color: #2D5D86;
+}
+
+#supportMessages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.support-message {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 75%;
+    word-break: break-word;
+    line-height: 1.4;
+    animation: supportMessageAppear 0.3s forwards;
+    white-space: pre-wrap;
+}
+
+@keyframes supportMessageAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.support-system {
+    background-color: #f1f1f1;
+    align-self: center;
+    color: #666;
+    font-style: italic;
+    font-size: 14px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.support-received {
+    background-color: #2D5D86;
+    color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+}
+
+.support-sent {
+    background-color: #3F79AE;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.support-timestamp {
+    font-size: 11px;
+    opacity: 0.7;
+    margin-top: 5px;
+    display: block;
+}
+
+#supportMessageForm {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    background-color: white;
+}
+
+#supportMessage {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#supportMessageForm button {
+    background-color: #3F79AE;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#supportMessageForm button:hover {
+    background-color: #2D5D86;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #supportChatContainer {
+        height: 85vh;
+        width: 95%;
+        margin: 15px auto;
+    }
+    
+    .support-message {
+        max-width: 85%;
+    }
+}
